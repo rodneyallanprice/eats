@@ -57,8 +57,8 @@ const NavBar = () => {
         })();
     }, [day, hour, minute, ampm])
     return (
-        <div className="w-full flex items-center flex-col relative">
-            <div className="flex-row items-center text-3xl fixed top-0">
+        <div className="w-full flex items-center flex-col h-screen">
+            <div className="flex-row items-center text-3xl">
                 <div className="w-full h-20 flex text-white">
                     <ul className="flex flex-row my-5">
                         <li className="">
@@ -144,7 +144,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div>
-                <div className="text-[#2147BA] bg-white mt-20">
+                <div className="text-[#2147BA] bg-white  max-h-[calc(100vh-130px)] overflow-y-auto mb-5">
                     {results.map((restaurant) => {
 
                         return (<div className="group hover:w-400 hover:bg-blue-100 flex-row py-1 px-4 w-80"><div className="group-hover: test-lg">{restaurant.name}</div><span className="hidden group-hover:block text-right group-hover:text-lg">closes at {restaurant.closes}</span></div>)
