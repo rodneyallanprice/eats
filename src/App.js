@@ -1,6 +1,5 @@
 import React from "react";
-import NavBar from './NavBar'
-import Mycomp from './Mycomp'
+import NavBar from "./NavBar";
 
 function App() {
   return (
