@@ -221,6 +221,9 @@ const NavBar = () => {
               </div>
             );
           })}
+          {results.length === 0 && <div className="p-4">
+            There are no open restaurants at this time.
+            </div>}
         </div>
       </div>
     </div>
